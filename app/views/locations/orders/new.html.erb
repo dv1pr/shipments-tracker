@@ -1,0 +1,14 @@
+<h1>Add Order</h1>
+
+<%= form_for @order, url: customer_location_orders_path do |f| %>
+    <%= f.text_field :vendor_id, placeholder: "Vendor ID", class: "form-field", value: '1'%>
+
+    <%= f.text_field :tracking, placeholder: "Tracking", class: "form-field", value: "2435321423" %>
+
+    <%= f.text_field :shipment_duration, placeholder: "Shipment duration", class: "form-field", value: "7.4" %>
+
+    <%= f.label "Already delivered?" %>
+    <%= f.check_box :delivered, style: "margin-left:1%;cursor:pointer;", checked: true%>
+
+    <%= f.submit "Save Order", class: "btn btn-default form-field"%>
+<% end %>

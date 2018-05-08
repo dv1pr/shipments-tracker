@@ -1,0 +1,10 @@
+<body id="locations">
+  <%= tag.h1 @customer.name %>
+  <%= tag.div nil, id: 'locations_map', style: 'margin-top:8%', data: {locations: @locations.to_json} %>
+  <hr>
+  <% @locations.each do |l| %>
+    <%= content_tag :div, class: "col-xs-3" do %>
+      <%= tag.h5 link_to l.name, customer_location_orders_path(customer_id: @customer.id, location_id: l.id) %>
+    <% end %>
+  <% end %>
+</body>

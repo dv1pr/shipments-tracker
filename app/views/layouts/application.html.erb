@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShipmentsTracker</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'http://maps.google.com/maps/api/js?key=AIzaSyCqhpB8I1A80JB70P73Is0DJvEs4a7WGhQ' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <% if notice %>
+      	<div class='alert alert-success text-center'>
+      		<%= notice %>
+      	</div>
+      <% elsif alert %>
+      	<div class='alert alert-danger text-center'>
+      		<%= alert %>
+      	</div>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.highlight {
+  color: $highlight_color;
+}
+
+.mute {
+  color: $muted_color;
+}
+
+.display-order {
+  margin-left: 3%;
+  padding: 1%;
+}
+
+.late {
+  background: rgba(yellow, 0.5);
+}
+
+.attention {
+  background: rgba(red, 0.5);
+}
+
+.inline {
+  display: inline-block;
+}
+
+.form-field {
+  margin: 2% 0;
+  padding: .5%;
+  display: block;
+}
+
+#map {
+  height: 400px;
+}

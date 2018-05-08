@@ -1,0 +1,6 @@
+<h1>Orders#show</h1>
+<%= tag.div "Order #: #{@order.id}" %>
+<%= tag.div "Tracking: #{@order['tracking']}" %>
+<% status = @order['delivered'] ? "Delivered" : "On it's way!" %>
+<%= tag.div "Status: #{status}" %>
+<%= tag.div "Shipment Duration (in days): #{@order['shipment_duration']}" %>

@@ -1,0 +1,11 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "fonts_and_colors.scss";
+@import "orders.scss";
+@import "locations.scss";
+
+
+body {
+  font-family: $main_font;
+}
